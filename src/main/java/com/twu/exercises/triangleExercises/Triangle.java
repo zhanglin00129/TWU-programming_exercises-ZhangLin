@@ -12,4 +12,12 @@ public class Triangle {
         }
         return result;
     }
+
+    public String vertical(int num) {
+        String result = "";
+        for (int j = 0; j < num; j++) {
+            result += "*\n";
+        }
+        return result;
+    }
 }
