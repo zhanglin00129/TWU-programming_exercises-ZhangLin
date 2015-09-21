@@ -1,32 +1,24 @@
 package com.twu.exercises.triangleExercises;
 
+import org.apache.commons.lang3.StringUtils;
+
 public class Triangle {
     public String execute() {
         return "*";
     }
 
     public String horizontal(int num) {
-        String result = "";
-        for (int j = 0; j < num; j++) {
-            result += "*";
-        }
-        return result;
+        return StringUtils.repeat("*", num);
     }
 
     public String vertical(int num) {
-        String result = "";
-        for (int j = 0; j < num; j++) {
-            result += "*\n";
-        }
-        return result;
+        return StringUtils.repeat("*\n", num);
     }
 
     public String right(int num) {
         String result = "";
-        for (int i = 0; i < num; i++) {
-            for (int j = 0; j <= i; j++) {
-                result += "*";
-            }
+        for (int i = 1; i <= num; i++) {
+            result += StringUtils.repeat("*", i);
             result += "\n";
         }
         return result;
