@@ -28,4 +28,9 @@ public class triangleTest {
     public void testVerticalLine() throws Exception {
         assertThat(triangle.vertical(3), is("*\n*\n*\n"));
     }
+
+    @Test
+    public void testRightTriangle() throws Exception {
+        assertThat(triangle.right(3), is("*\n**\n***\n"));
+    }
 }
