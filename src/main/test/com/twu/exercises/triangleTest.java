@@ -1,4 +1,4 @@
-package com.twu.exercises.triangleExercises;
+package com.twu.exercises;
 
 import org.junit.Before;
 import org.junit.Test;
