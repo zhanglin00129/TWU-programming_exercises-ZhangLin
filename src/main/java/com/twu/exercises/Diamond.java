@@ -13,4 +13,14 @@ public class Diamond {
         }
         return result;
     }
+
+    public String rhombus(int num) {
+        String result = isosceles(num);
+        for (int i = num; i < 2 * num - 1; i++) {
+            result += StringUtils.repeat(" ", (1 + i - num));
+            result += StringUtils.repeat("*", (4 * num - 2 * i - 3));
+            result += "\n";
+        }
+        return result;
+    }
 }

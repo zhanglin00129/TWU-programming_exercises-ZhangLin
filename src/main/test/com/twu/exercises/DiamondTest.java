@@ -19,6 +19,11 @@ public class DiamondTest {
     public void testIsoscelesTriangle() throws Exception {
         String expect = "  *\n ***\n*****\n";
         assertThat(diamond.isosceles(3), is(expect));
+    }
 
+    @Test
+    public void testDiamond() throws Exception {
+        String expect = "  *\n ***\n*****\n ***\n  *\n";
+        assertThat(diamond.rhombus(3), is(expect));
     }
 }
